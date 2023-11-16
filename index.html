@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-мерные Крестики-Нолики</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="container">
+    <label for="difficultySlider" id="selectedDifficulty">Сложность: Высокая</label>
+    <input type="range" id="difficultySlider" min="0" max="2" step="1" value="2">
+
+    <label for="rowsInput">Число строк: </label>
+    <input type="number" id="rowsInput" value="3" min="3" max="100" placeholder="Целое число...">
+
+    <label for="columnsInput">Число столбцов: </label>
+    <input type="number" id="columnsInput" value="3" min="3" max="30" placeholder="Целое число...">
+
+    <label for="winInput">Победа: </label>
+    <input type="number" id="winInput" value="3" min="3" max="30" placeholder="Целое число...">
+
+    <button onclick="initGame()">Начать игру</button>
+
+    <div id="result"> </div>
+
+    <div id="board" class="board"></div>
+
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>
